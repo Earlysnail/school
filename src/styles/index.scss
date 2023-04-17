@@ -189,3 +189,101 @@ aside {
 .multiselect--active {
   z-index: 1000 !important;
 }
+
+
+
+
+//
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-start {
+  justify-content: start;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.flex-direction {
+  flex-direction: column; 
+}
+
+.align-center {
+  align-items: center;
+}
+
+.padding-default {
+  padding: 12px;
+}
+
+.padding-top {
+  padding-top: 12px;
+}
+
+.padding-right {
+  padding-right: 12px;
+}
+
+.padding-bottom {
+  padding-bottom: 12px;
+}
+
+.padding-left {
+  padding-left: 12px;
+}
+
+.margin-default {
+  margin: 12px;
+}
+
+.margin-top {
+  margin-top: 12px;
+}
+
+.margin-right {
+  margin-right: 12px;
+}
+
+.margin-bottom {
+  margin-bottom: 12px;
+}
+
+.margin-left {
+  margin-left: 12px;
+}
+
+.text-default{
+  font-size: 16px;
+}
+
+.bg-gray {
+  background-color: #EDF0F3;
+}
+
+.bg-gray-light{
+  background-color:#F7F7F7;
+}
+
+.bg-primary {
+  background-color: #1397EB;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+

@@ -5,6 +5,7 @@ Vue.use(Router)
 
 /* Layout */
 import Layout from '@/layout'
+import LayoutClient from '@/layout-client'
 
 /* Router Modules */
 import componentsRouter from './modules/components'
@@ -54,6 +55,17 @@ export const constantRoutes = [
     path: '/login',
     component: () => import('@/views/login/index'),
     hidden: true
+  },
+  {
+    path: '/home',
+    component: LayoutClient,
+    hidden: true,
+    children: [
+      {
+        path: '/home',
+        component: () => import('@/views/home/index')
+      }
+    ]
   },
   {
     path: '/auth-redirect',
@@ -130,6 +142,37 @@ export const constantRoutes = [
  */
 export const asyncRoutes = [
   {
+    path: '/system',
+    component: Layout,
+    redirect: '/system/setting',
+    name: 'System',
+    meta: {
+      title: '系统管理',
+      icon: 'lock',
+      roles: ['admin']
+    },
+    children: [
+      {
+        path: 'setting',
+        component: () => import('@/views/system/setting'),
+        name: 'Setting',
+        meta: {
+          title: '系统设置',
+          roles: ['admin']
+        }
+      },
+      {
+        path: 'ftp',
+        component: () => import('@/views/system/ftp'),
+        name: 'Ftp',
+        meta: {
+          title: 'FTP账号设置',
+          roles: ['admin']
+        }
+      },
+    ]
+  },
+  {
     path: '/permission',
     component: Layout,
     redirect: '/permission/page',
@@ -185,10 +228,10 @@ export const asyncRoutes = [
   },
 
   /** when your routing map is too long, you can split it into small modules **/
-  componentsRouter,
-  chartsRouter,
-  nestedRouter,
-  tableRouter,
+  // componentsRouter,
+  // chartsRouter,
+  // nestedRouter,
+  // tableRouter,
 
   {
     path: '/example',

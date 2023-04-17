@@ -6,11 +6,15 @@ const role = require('./role')
 const article = require('./article')
 const search = require('./remote-search')
 
+const ftp = require('./ftp')
+
 const mocks = [
   ...user,
   ...role,
   ...article,
-  ...search
+  ...search,
+
+  ...ftp,
 ]
 
 // for front mock
