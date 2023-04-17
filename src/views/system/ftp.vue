@@ -8,9 +8,10 @@
       <div class="padding-default bg-white">
         <el-row class="flex justify-end">
           <el-button @click="toAdd"><i
-              class="el-icon-plus"></i>添加FTP账号</el-button>
-          <el-button><i class="el-icon-edit"></i>编辑</el-button>
-          <el-button><i class="el-icon-delete"></i>删除</el-button>
+            class="el-icon-plus"
+          />添加FTP账号</el-button>
+          <el-button><i class="el-icon-edit" />编辑</el-button>
+          <el-button><i class="el-icon-delete" />删除</el-button>
         </el-row>
         <el-table
           ref="multipleTable"
@@ -22,27 +23,23 @@
           <el-table-column
             type="selection"
             min-width="10%"
-          >
-          </el-table-column>
+          />
           <el-table-column
             prop="name"
             label="用户名"
             min-width="30%"
-          >
-          </el-table-column>
+          />
           <el-table-column
             prop="mechanism"
             label="所属机构"
             min-width="30%"
-          >
-          </el-table-column>
+          />
           <el-table-column
             prop="catalogue"
             label="主目录"
             min-width="30%"
             show-overflow-tooltip
-          >
-          </el-table-column>
+          />
         </el-table>
       </div>
     </div>
@@ -58,10 +55,10 @@
           style="margin: 10px 20px; max-width: 600px;"
         >
           <el-form-item label="FTP账号">
-            <el-input v-model="form.username"></el-input>
+            <el-input v-model="form.username" />
           </el-form-item>
           <el-form-item label="密码">
-            <el-input v-model="form.password"></el-input>
+            <el-input v-model="form.password" />
           </el-form-item>
           <el-form-item label="选择机构">
             <el-select
@@ -71,11 +68,11 @@
               <el-option
                 label="永阳新区小学"
                 value="01"
-              ></el-option>
+              />
               <el-option
                 label="永阳老区小学"
                 value="02"
-              ></el-option>
+              />
             </el-select>
           </el-form-item>
           <el-form-item>
@@ -140,7 +137,7 @@ export default {
     //   }
     // },
     handleSelectionChange(val) {
-      this.multipleSelection = val;
+      this.multipleSelection = val
     },
 
     toAdd() {

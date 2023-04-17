@@ -10,14 +10,14 @@
 import { Navbar, AppMain } from './components'
 
 export default {
+  components: {
+    AppMain,
+    Navbar
+  },
   data() {
     return {
     }
-  },
-  components: {
-    AppMain,
-    Navbar,
-  },
+  }
 }
 </script>
 

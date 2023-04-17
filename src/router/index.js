@@ -169,7 +169,7 @@ export const asyncRoutes = [
           title: 'FTP账号设置',
           roles: ['admin']
         }
-      },
+      }
     ]
   },
   {

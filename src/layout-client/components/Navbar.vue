@@ -7,17 +7,17 @@
         :default-active="activeIndex"
         class="el-menu-demo"
         mode="horizontal"
-        @select="handleSelect"
         background-color="#3D69FE"
         text-color="#fff"
         active-text-color="#ffd04b"
+        @select="handleSelect"
       >
         <el-menu-item index="1">首页</el-menu-item>
         <el-menu-item index="2">课件</el-menu-item>
         <el-menu-item index="3">教研</el-menu-item>
         <el-menu-item index="4">设置</el-menu-item>
       </el-menu>
-      <div></div>
+      <div />
     </div>
   </div>
 </template>
@@ -26,7 +26,7 @@
 export default {
   data() {
     return {
-      activeIndex: '1',
+      activeIndex: '1'
     }
   },
   methods: {
